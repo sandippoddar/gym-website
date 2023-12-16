@@ -11,22 +11,22 @@ body{
     overflow-x: hidden;
 }
 .header{
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./pexels-leon-ardho-1552242.jpg); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.442),rgba(0,0,0,0.75)),url(./pexels-leon-ardho-1552242.jpg); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 484px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.video-background{
+/* .video-background{
     position: relative;
     right: 0;
     bottom: 0;
     z-index: -1;
-}
+} */
 .navbar{
     display: flex;
     justify-content: space-around;
@@ -41,6 +41,11 @@ body{
 .navbar ul li a{
     text-decoration: none;
     color: #fff;
+    list-style: none;
+}
+.navbar ul li a:hover{
+    text-decoration: underline;
+    color: orange;
 }
 .end button{
     padding: 6px 8px;
@@ -72,12 +77,22 @@ body{
     padding: 15px 35px;
     border-radius: 80px;
     cursor: pointer;
+    background-color: whitesmoke;
+    font-size: 15px;
+    transition: all 0.5s ease-in-out;
+}
+.head-sec button:hover{
+    font-size: 20px;
+    background-color: yellow;
+    color: black;
 }
 /* courses we offer */
 .section{
     padding-top: 115px;
-    width: 80%;
-    margin: 0px 10%;
+    padding-bottom: 50px;
+    width: 100%;
+    /* margin: 0px 10%; */
+    background-color: rgb(120, 160, 188);
 }
 .section h1{
     text-align: center;
@@ -91,6 +106,7 @@ body{
 }
 .section h1:hover{
     font-size: 40px;
+    background-color: rgb(65, 212, 72);
 }
 .album-part img{
     width: 255px;
@@ -116,6 +132,8 @@ body{
 /* why choose us */
 .choose{
     padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: rgb(153, 106, 138);
 }
 .logo1 img{
     width: 484px;
@@ -139,14 +157,39 @@ body{
 }
 .email{
     display: flex;
+    gap: 10px;
 }
 .main{
     display: flex;
     justify-content: space-around;
     padding: 75px 0px;
 }
+.links{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.services{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.company{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .contact{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+.social a i{
+    letter-spacing: 10px;
+    font-size: 25px;
+    color: black;
 }
