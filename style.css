@@ -38,10 +38,12 @@ body{
     display: flex;
     gap: 50px;
 }
+.navbar ul li{
+    list-style: none;
+}
 .navbar ul li a{
     text-decoration: none;
     color: #fff;
-    list-style: none;
 }
 .navbar ul li a:hover{
     text-decoration: underline;
@@ -161,6 +163,7 @@ body{
 }
 .main{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 75px 0px;
 }
